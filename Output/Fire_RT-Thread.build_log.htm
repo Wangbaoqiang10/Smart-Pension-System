@@ -1,0 +1,87 @@
+<html>
+<body>
+<pre>
+<h1>礦ision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: μVision V5.34.0.0
+Copyright (C) 2021 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: w w, w, LIC=WHYH9-4R5CV-EVY1R-KZEHV-JLC29-JVCGT
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Plus  Version: 5.34.0.0
+Toolchain Path:  C:\Keil_v5\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 7 (build 960)
+Assembler:       Armasm.exe V5.06 update 7 (build 960)
+Linker/Locator:  ArmLink.exe V5.06 update 7 (build 960)
+Library Manager: ArmAr.exe V5.06 update 7 (build 960)
+Hex Converter:   FromElf.exe V5.06 update 7 (build 960)
+CPU DLL:         SARMCM3.DLL V5.34.0.0
+Dialog DLL:      DCM.DLL V1.17.3.0
+Target DLL:      STLink\ST-LINKIII-KEIL_SWO.dll V3.0.8.0
+Dialog DLL:      TCM.DLL V1.48.0.0
+ 
+<h2>Project:</h2>
+C:\Users\wangb\Desktop\To-Do\比赛\嵌入式芯片与系统设计\代码\OneNet_esp8266\Project\RVMDK（uv5）\Fire_RT-Thread.uvprojx
+Project File Date:  07/10/2022
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 7 (build 960)', folder: 'C:\Keil_v5\ARM\ARMCC\Bin'
+Build target 'Fire_RT-Thread'
+Note: source file '..\..\rtthread\3.0.3\src\timer.c' - object file renamed from '..\..\Output\timer.o' to '..\..\Output\timer_1.o'.
+compiling bsp_beep.c...
+compiling stm32f4xx_it.c...
+..\..\User\Bsp\led\bsp_led.h(72): warning:  #47-D: incompatible redefinition of macro "LED1"  (declared at line 31)
+  #define LED1 PFout(10)	// DS1	
+..\..\User\stm32f4xx_it.c: 1 warning, 0 errors
+compiling main.c...
+..\..\User\Bsp\led\bsp_led.h(72): warning:  #47-D: incompatible redefinition of macro "LED1"  (declared at line 31)
+  #define LED1 PFout(10)	// DS1	
+..\..\User\main.c(3): warning:  #14-D: extra text after expected end of preprocessing directive
+  #include <string.h>                                                                                                                                                                                                                                                                                                                                                    b                                                                                                                                                                        cvv                                                                                               u
+..\..\User\main.c(179): warning:  #167-D: argument of type "u8 *" is incompatible with parameter of type "const char *"
+              if (is_begin_with(USART_RX_BUF, sensor_name[0]))
+..\..\User\main.c(195): warning:  #167-D: argument of type "u8 *" is incompatible with parameter of type "const char *"
+                  for (i = 17; i < strlen(USART_RX_BUF); i++)
+..\..\User\main.c(207): warning:  #167-D: argument of type "u8 *" is incompatible with parameter of type "const char *"
+              if (is_begin_with(USART_RX_BUF, sensor_name[1]))
+..\..\User\main.c(210): warning:  #167-D: argument of type "u8 *" is incompatible with parameter of type "const char *"
+                  for (i = strlen(USART_RX_BUF) - 3; i < strlen(USART_RX_BUF) + 1; i++)
+..\..\User\main.c(210): warning:  #167-D: argument of type "u8 *" is incompatible with parameter of type "const char *"
+                  for (i = strlen(USART_RX_BUF) - 3; i < strlen(USART_RX_BUF) + 1; i++)
+..\..\User\main.c(222): warning:  #167-D: argument of type "u8 *" is incompatible with parameter of type "const char *"
+                  for (i = 5; i < strlen(USART_RX_BUF) - 10; i++)
+..\..\User\main.c(238): warning:  #167-D: argument of type "u8 *" is incompatible with parameter of type "const char *"
+          if(is_begin_with(tmp_buf, sensor_name[2]))
+..\..\User\main.c(247): warning:  #167-D: argument of type "u8 *" is incompatible with parameter of type "const char *"
+              sensor_data.heartrate = atoi(nrf_data);
+..\..\User\main.c(253): warning:  #167-D: argument of type "u8 *" is incompatible with parameter of type "const char *"
+          if(is_begin_with(tmp_buf, sensor_name[3]))
+..\..\User\main.c(262): warning:  #167-D: argument of type "u8 *" is incompatible with parameter of type "const char *"
+              sensor_data.systolic = atoi(nrf_data);    //收缩压
+..\..\User\main.c(272): warning:  #167-D: argument of type "u8 *" is incompatible with parameter of type "const char *"
+              sensor_data.diastolic = atoi(nrf_data);    //舒张压
+..\..\User\main.c: 13 warnings, 0 errors
+compiling board.c...
+..\..\User\Bsp\led\bsp_led.h(72): warning:  #47-D: incompatible redefinition of macro "LED1"  (declared at line 31)
+  #define LED1 PFout(10)	// DS1	
+..\..\User\board.c: 1 warning, 0 errors
+linking...
+Program Size: Code=18884 RO-data=900 RW-data=240 ZI-data=6832  
+FromELF: creating hex file...
+"..\..\Output\Fire_RT-Thread.axf" - 0 Error(s), 15 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: Keil
+                http://www.keil.com/pack/Keil.STM32F4xx_DFP.2.16.0.pack
+                Keil.STM32F4xx_DFP.2.16.0
+                STMicroelectronics STM32F4 Series Device Support, Drivers and Examples
+
+<h2>Collection of Component include folders:</h2>
+  C:\Users\wangb\AppData\Local\Arm\Packs\Keil\STM32F4xx_DFP\2.16.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include
+
+<h2>Collection of Component Files used:</h2>
+Build Time Elapsed:  00:00:02
+</pre>
+</body>
+</html>
