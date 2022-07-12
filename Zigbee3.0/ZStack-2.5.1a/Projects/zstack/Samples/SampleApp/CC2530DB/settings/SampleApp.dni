@@ -1,0 +1,37 @@
+[DebugChecksum]
+Checksum=-810174284
+[DisAssemblyWindow]
+NumStates=_ 1
+State 1=_ 1
+[InstructionProfiling]
+Enabled=_ 0
+[CodeCoverage]
+Enabled=_ 0
+[StackPlugin]
+Enabled=1
+OverflowWarningsEnabled=1
+WarningThreshold=90
+SpWarningsEnabled=1
+WarnHow=0
+UseTrigger=1
+TriggerName=main
+LimitSize=0
+ByteLimit=50
+[Breakpoints]
+Bp0=_ "STD_CODE" "{$PROJ_DIR$\..\Source\SampleApp.c}.392.12@1" 0 0 0 0 "" 0 ""
+Count=1
+[ChipconEmu]
+Stop timers on halt=0
+Leave target running=1
+[Log file]
+LoggingEnabled=_ 0
+LogFile=_ ""
+Category=_ 0
+[TermIOLog]
+LoggingEnabled=_ 0
+LogFile=_ ""
+[Aliases]
+A0=_ "E:\多个传感器例子\3.温度气体两个终端\ZStack-2.5.1a\Projects\zstack\ZMain\TI2530DB\ZMain.c" ""
+A1=_ "F:\dongle例程\dongle usb交互\ZStack-2.5.1a\Projects\zstack\ZMain\TI2530DB\ZMain.c" ""
+Count=2
+SuppressDialog=1
